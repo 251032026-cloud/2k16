@@ -1,0 +1,210 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Segoe UI",Arial,sans-serif;
+  background:#0f172a;
+  color:#f1f5f9;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#111827;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 60px;
+  border-bottom:1px solid #1f2937;
+  z-index:1000;
+}
+
+.brand{
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:2px;
+  color:#fff;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:32px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#cbd5e1;
+  font-weight:500;
+  transition:0.25s;
+}
+
+.nav-links a:hover{
+  color:#fff;
+}
+
+.t{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+
+.active{
+  color:#fff;
+  border-bottom:2px solid #4f46e5;
+  padding-bottom:4px;
+}
+
+.hero{
+  position:relative;
+  margin-top:90px;
+  height:85vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.ind{
+  position:absolute;
+  inset:0;
+  background:url(index.jfif) center 60%/cover no-repeat;
+  filter:blur(4px) brightness(0.65);
+  transform:scale(1.05);
+}
+
+.hero-content{
+  position:relative;
+  text-align:center;
+}
+
+.hero-content h1{
+  font-size:110px;
+  color:#fff;
+  text-shadow:0 0 15px rgba(255,255,255,0.5);
+}
+
+.hero-content h2{
+  font-size:22px;
+  color:#e2e8f0;
+  text-shadow:0 0 8px rgba(255,255,255,0.4);
+}
+
+.page-header{
+  position:relative;
+  height:350px;
+  margin-top:90px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.bg{
+  position:absolute;
+  inset:0;
+  background-position:center 25%;
+  background-size:cover;
+  filter:blur(4px) brightness(0.7) saturate(0.7);
+  transform:scale(1.1);
+}
+
+.apps{ background-image:url(apps.jfif); }
+.games{ background-image:url(games2016.jfif); }
+
+.page-header h1{
+  position:relative;
+  color:#fff;
+  font-size:55px;
+  text-shadow:0 0 15px rgba(255,255,255,0.5);
+}
+
+.section{
+  padding:90px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.section h2{
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:35px;
+  padding:80px 40px;
+}
+
+.card{
+  background:#1e293b;
+  padding:32px;
+  border-radius:14px;
+  transition:0.25s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  background:#243248;
+  visibility: hidden;
+}
+
+.m{
+  color:transparent;
+  user-select:text;
+}
+
+.broke{
+  letter-spacing:-4px;
+}
+
+footer{
+  padding:50px 20px;
+  text-align:center;
+  background:#111827;
+  color:#94a3b8;
+  font-size:14px;
+}
+
+@media(max-width:900px){
+  .hero-content h1{ font-size:70px; }
+  .page-header h1{ font-size:40px; }
+}
+
+@media(max-width:700px){
+  .navbar{
+    flex-direction:column;
+    gap:14px;
+    padding:18px 20px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+  }
+
+  .hero{ height:60vh; }
+}
+p {
+    font-size: larger;
+}
+.gli{
+  position:relative;
+}
+
+.gli::before{
+ content:"Gaming in 2016";
+  position:absolute;
+  left:50px;
+  top:4px;
+  color:#4f46e5;
+  opacity:0.5;
+}
